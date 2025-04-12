@@ -22,3 +22,6 @@
 
 # Dependencie graph output
 /dependencies_*.html
+
+# Other
+*.bak
