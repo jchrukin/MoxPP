@@ -1,6 +1,6 @@
-cc_library(
-    name = "moxpp",
-    srcs = ["moxpp.cpp"],
-    hdrs = ["moxpp.h"],
-    visibility = ["//visibility:public"],
+cc_binary(
+    name = "moxpp_app",
+    srcs = ["main.cpp"],
+	deps = ["@spdlog//:spdlog"],
+	defines = ["MOXPP_VERSION=\\\"1.0.0\\\""]
 )
